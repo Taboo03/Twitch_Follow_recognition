@@ -1,0 +1,14 @@
+Authorization: <>
+Client-Id: Bearer
+
+# Current border size, is also fallback number for when something goes wrong
+current-border-size: 100
+
+# Ticks between updates (Use higher delay to use less API quota)
+twitch-update-delay-ticks: 200
+
+# Followers needed to upgrade the border by 1 block
+followers-per-block: 4
+
+# All names of the streamers on the server, can also be added via the /addstreamer command
+streamer_names:

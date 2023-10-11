@@ -1,0 +1,25 @@
+name: Twitch_Follow_recognition
+version: '${version}'
+main: org.masu1129.twitch_test.Twitch_Test
+api-version: '1.20'
+libraries:
+  - com.github.twitch4j:twitch4j:1.17.0
+commands:
+  updateBorder:
+    description: 팔로워 수를 업데이트 합니다.
+    usage: /updateBorderCommand
+    permission: twtitch_test.updateBorder
+    permission-message: 사용 권한이 없습니다.
+  addCreator:
+    description: 서버에 스트리머를 추가합니다.
+    usage: /addCreatorCommand
+    permission: twtitch_test.addCreator
+    permission-message: 사용 권한이 없습니다.
+  removeCreator:
+    description: 서버에서 스트리머를 삭제합니다
+    usage: /removeCreatorCommand
+    permission: Twitch_Test.removeCreator
+    permission-message: 사용 권한이 없습니다.
+  getCreators:
+    description: 서버에 있는 모든 스트리머를 가져옵니다.
+    usage: /getCreatorsCommand
